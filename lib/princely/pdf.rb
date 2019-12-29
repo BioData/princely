@@ -55,10 +55,10 @@ module Princely
       options << "--input=html"
       options << "--server" if @server_flag
       options << "--log=#{log_file}"
+      options << "--no-local-files"
       options << "--media=#{media}" if media
       options << "--javascript" if @javascript_flag
       options << @style_sheets
-      options
     end
 
     # Makes a pdf from a passed in string.
