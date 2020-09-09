@@ -17,7 +17,7 @@ module Princely
       if Princely.ruby_platform =~ /mswin32|minigw32/
         "C:/Program Files/Prince/Engine/bin/prince"
       else
-        `which prince`.chomp
+        "/usr/local/bin/prince"
       end
     end
 
